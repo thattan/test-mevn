@@ -3,6 +3,8 @@
 const User = require('../models/user_schema');
 
 const createData = (req, res) => {
+  debugger;
+  console.log('hit');
   User.create(req.body)
     .then((data) => {
       console.log('New User Created!', data);
@@ -20,6 +22,8 @@ const createData = (req, res) => {
 };
 
 const readData = (req, res) => {
+    debugger;
+  console.log('hit');
   User.find()
     .then((data) => {
       res.status(200).json(data);
