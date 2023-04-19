@@ -24,7 +24,7 @@ export default {
     async addData() {
       const response = await axios.post(`http://localhost:9000/api`, {
         name: 'test',
-        // password: 'dispass'
+        password: 'dispass'
       });
 
       console.log(response);
